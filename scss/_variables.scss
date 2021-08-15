@@ -1,0 +1,13 @@
+/* VARIABLES DE SCSS */
+
+$color-body: darkred;
+$ancho-element: 30rem;
+$color-accordion: antiquewhite;
+$border-accordion: 5px;
+$numero: 2;
+$font-todo: 'Cinzel', serif;
+
+@mixin sizes ($width, $height) {
+    height: $height;
+    width: $width;
+}
