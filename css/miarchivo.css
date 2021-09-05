@@ -29,7 +29,7 @@
   align-items: center; }
 
 .textoCentrado {
-  text-align: center;
+  text-align: center !important;
   justify-content: center;
   margin-bottom: 20vh; }
 
@@ -38,8 +38,8 @@
   flex-flow: wrap;
   width: 100vw;
   align-items: center;
-  margin-top: 200px;
-  margin-bottom: 200px;
+  margin-top: 50px;
+  margin-bottom: 100px;
   justify-content: center; }
 
 .hijo {
@@ -80,8 +80,8 @@
   background-color: darkred; }
 
 .productosIndex {
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   border-right-width: 10px;
   border-left-width: 10px;
   border-bottom-width: 60px;
@@ -93,7 +93,7 @@
 
 .productosNombre {
   font-family: 'Cinzel', serif;
-  font-size: 32px;
+  font-size: 24px;
   margin-top: 2px;
   margin-bottom: 2px; }
 
@@ -154,7 +154,7 @@
 /* ICONOS INDEX */
 .iconosIndex {
   background-color: antiquewhite;
-  font-size: 28px;
+  font-size: 24px;
   font-family: 'Cinzel', serif;
   margin-top: 100px;
   width: 100vw;
@@ -235,7 +235,7 @@
 /* PRODUCTOS */
 .iconosProductos {
   background-color: antiquewhite;
-  font-size: 28px;
+  font-size: 20px;
   font-family: 'Cinzel', serif;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -245,7 +245,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 50% 50%;
-  height: 12vh;
+  height: 20vh;
   justify-items: center;
   align-items: center;
   justify-content: space-evenly;
@@ -297,7 +297,8 @@
   display: flex;
   text-align: center;
   align-content: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 20vh; }
 
 .botonMostrarMas {
   font-family: 'Cinzel', serif;
@@ -561,7 +562,8 @@
   font-family: 'Cinzel', serif;
   letter-spacing: 5px;
   font-size: 42px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  margin-block-start: 0; }
 
 h1 {
   font-size: 500%;
@@ -627,9 +629,9 @@ nav ul li ul li a:hover {
 /* MEDIA QUERIE MOBILE*/
 @media only screen and (max-width: 480px) {
   .contenedorMuelle {
-    width: 100vw; }
+    width: 100vw !important; }
   .fotoMuelle {
-    width: 100%; }
+    width: 100% !important; }
   .imgPrincipal {
     background-image: url(../imagenes/santorini-package1.jpg);
     background-size: cover;
@@ -760,6 +762,68 @@ nav ul li ul li a:hover {
     width: 33%;
     justify-content: space-evenly;
     align-items: center; }
+  .iconosProductos {
+    background-color: antiquewhite;
+    font-size: 16px;
+    font-family: 'Cinzel', serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    height: auto;
+    /* justify-items: center; */
+  }
+  .flexIconos {
+    display: flex;
+    column-gap: 10%;
+  }
+  .productosFlex1 {
+    order: 1;
+    padding-top: 5px;
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+  .productosFlex2 {
+    order: 2;
+    padding-top: 5px;
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+  .productosFlex3 {
+    order: 3;
+    padding-top: 5px;
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+  .productosFlex4 {
+    order: 4;
+    padding-top: 5px;
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+  .productosFlex5 {
+    order: 5;
+    padding-top: 5px;
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+  .productosFlex6 {
+    order: 6;
+    padding-top: 5px;
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+  #iconoPeso {
+    width: auto;
+    height: 3vh; }
+  #iconoCandado {
+    width: auto;
+    height: 3vh; }
   .productosIndex {
     width: 200px;
     height: 200px;
@@ -784,4 +848,92 @@ nav ul li ul li a:hover {
     justify-items: center; }
   nav ul li a {
     font-size: 16px;
-    padding: 10px 8px; } }
+    padding: 10px 8px; } 
+  .sectionNosotros__titulo {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    line-height: 1.6;
+    font-size: 30px;
+    color: darkred;
+    margin-top: 10vh; }
+  .sectionNosotros__texto {
+    font-family: 'Cinzel', serif;
+    line-height: 1.6;
+    color: darkred;
+    display: flex;
+    font-size: 16px;
+    flex: 1 auto;
+    height: 50%;
+    width: 50%;
+    align-self: center;
+    text-align: center;
+    margin-top: 0 !important; }
+  .boxContacto {
+    max-width: 100%;
+    font-size: 16px;
+    font-family: 'Cinzel', serif;
+    box-shadow: gray !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 2px; }
+    .padreMostrarMas {
+      display: flex;
+      text-align: center;
+      align-content: center;
+      justify-content: center;
+      margin-top: 5vh;
+  }
+    .botonMostrarMas {
+      font-family: 'Cinzel', serif;
+      font-size: 16px;
+      background-color: antiquewhite;
+      color: black;
+      margin-top: 2vh;
+      margin-bottom: 4vh;
+      padding: 10px;
+      display: inline-block;
+      border-radius: 5px;
+  }
+  .buttonAccordion {
+    font-size: 16px;
+    color: darkred !important;
+    background-color: antiquewhite !important;
+    border: 0;
+    border-color: gray;
+    border-radius: 5px !important;
+    width: 200px;
+    /* box-shadow: 0 0 0 0.25rem grey; */
+}
+  #tituloContacto {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 5px;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-block-start: 0;
+  }
+  .textoContacto {
+    font-family: 'Cinzel', serif;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.sendButton2 {
+  font-family: 'Cinzel', serif;
+  background-color: antiquewhite;
+  color: black;
+  margin: 5px;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.eraseButton2 {
+  font-family: 'Cinzel', serif;
+  background-color: antiquewhite;
+  color: black;
+  margin: 5px;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+}
+}
